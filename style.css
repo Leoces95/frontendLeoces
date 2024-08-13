@@ -1,7 +1,25 @@
+#saludo{
+    border: 1px solid black;
+    text-align: center;
+}
 img
 {
 width: 10%;
 height: auto;
-border-radius: 5%;
+border-radius: 500%;
 border-collapse: collapse;
+margin-bottom: 30px;
+}
+.perfil{
+    text-align: center;
+    border: 1px solid black;
+}
+#linkedin, #github{
+    display: block;
+    margin-bottom: 10px;
+}
+
+#botones{
+    border: 1px solid black;
+    text-align: center;
 }
