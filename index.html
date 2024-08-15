@@ -1,48 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="30">
-    <meta name="author" content="Leoces95">
-    <meta name="description" content="Este es mi portafolio web">
-    <meta name="keywords" content="portafolio, Leoces95">
-    <link rel="stylesheet" href="style.css">
-    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
-    <script src="script.js" defer></script>
-    <title>PerfilLeoces</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="30">
+        <meta name="author" content="Leoces95">
+        <meta name="description" content="Este es mi portafolio web">
+        <meta name="keywords" content="portafolio, Leoces95">
+        <link rel="stylesheet" href="style.css">
+        <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
+        <script src="script.js" defer></script>
+        <title>PerfilLeoces</title>
+    </head>
 
-<body>
-    <div>
-        <header id="saludo">
-            <h1 id="nombre">Bienvenido</h1>
-            <p>Esta es una página de inicio del portafolio de Leonel Antonio Martinez, es un gusto tenerte por aquí de visita</p>
-            <a href="https://www.linkedin.com/in/leonel-antonio-mart%C3%ADnez-silgado-17b401299" target="_blank" id="linkedin">Linkedin</a>
-            <img src="assets/img/foto_documento_Leoces.jpeg" alt="foto_documento_Leoces" id="foto">
-            <a href="https://github.com/Leoces95" target="_blank" id="github">Github</a>            
+    <body>
+        <div>
+            <header id="saludo">
+                <h1 id="nombre">BIENVENIDO</h1>
+                <h2>LEONEL ANTONIO MARTINEZ SILGADO</h2>
+                <p id="descripcion">Esta es una página de inicio del portafolio de Leonel Antonio Martinez, es un gusto tenerte por aquí de visita</p>
+                
+                <img src="assets/img/foto_documento_Leoces.jpeg" alt="foto_documento_Leoces" id="foto">
+                <div id="enlaces">
+                    <a href="https://www.linkedin.com/in/leonel-antonio-mart%C3%ADnez-silgado-17b401299" target="_blank" id="linkedin">Linkedin</a>
+                    <a href="https://github.com/Leoces95" target="_blank" id="github">Github</a> 
+                </div>                      
 
-        </header>
-    </div>
-        <div id="botones" >
-            <button onclick="perfil()">perfil</button>
-            <button onclick="habilidades()">habilidades</button>
-            <button onclick="idiomas()">idiomas</button>
-            <button onclick="contacto()">Contacto</button>
+            </header>
         </div>
-    <div>
-        <p hidden id="mostrarPerfil" class="perfil">Leonel Antonio Martínez es un ser querido
-            que trabaja formidablemente con apasionamiento y alta responsabilidad corporativa,
-        disfruta pasar tiempo en familia y enseña a quienes los rodean </p> 
-        <p hidden id="mostrarHabilidades">HABILIDADES PROFESIONALES</p>
-    </div>
-
-    <div>
-        <footer>
-
-        </footer>
-    </div>
-</body>
+            <div id="botones" >
+                <button onclick="perfil()">perfil</button>
+                <button onclick="habilidades()">habilidades</button>
+                <button onclick="idiomas()">idiomas</button>
+                <button onclick="contacto()">Contacto</button>
+            </div>
+        <div id="textosOcultos">
+            <p hidden id="mostrarPerfil" class="perfil">Leonel Antonio Martínez es un ser querido <br>
+                que trabaja formidablemente con apasionamiento y alta responsabilidad corporativa, <br>
+            disfruta pasar tiempo en familia y enseña a quienes los rodean </p> 
+            <p hidden id="mostrarHabilidades">HABILIDADES PROFESIONALEs completar</p>
+            <p hidden id="mostrarIdiomas">English middle level</p>
+            <p hidden id="mostrarContacto">CELULAR: 3043470653
+                CORREO: leocesvives@gmail.com
+                DIRECCIÓN: San José de Uré            
+            </p>
+        </div>
+        <div>
+            <footer>
+                
+            </footer>
+        </div>
+    </body>
 
 </html>

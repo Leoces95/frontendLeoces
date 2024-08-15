@@ -1,6 +1,23 @@
 #saludo{
     border: 1px solid black;
     text-align: center;
+    border-radius: 30px;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 2%;
+    
+}
+
+#descripcion{
+    font-style: normal;
+    font-size: large;
+    
+}
+#enlaces{
+    display: block;
+    text-align: center;
+    
 }
 img
 {
@@ -11,8 +28,7 @@ border-collapse: collapse;
 margin-bottom: 30px;
 }
 .perfil{
-    text-align: center;
-    border: 1px solid black;
+    text-align: center;   
 }
 #linkedin, #github{
     display: block;
@@ -22,4 +38,19 @@ margin-bottom: 30px;
 #botones{
     border: 1px solid black;
     text-align: center;
+    border-radius: 15px;
+    padding: 1%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 2%;
+    
+}
+#textosOcultos{
+    border: 1px solid black;
+    text-align: center;   
+    border-radius: 30px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 2%;
+    
 }
