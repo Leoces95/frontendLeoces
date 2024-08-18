@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {  Router, RouterOutlet } from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,18 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+
 export class AppComponent {
+  
   title = 'ConsumoEndpointsLeoces';
+
+  constructor(private route: Router) {
+    // Se pueden definir otras variables, pero no es ideal en el constructor
+    }
+
+  Saludo(){
+    console.log('Bienvenidos esta es una aplicación de Angular en los inicios');    
+    this.route.navigate(['inicial']);
+  }
+
 }
