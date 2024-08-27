@@ -11,11 +11,15 @@ export class ConsumoDeEndpointsService {
   apiUrl = 'http://127.0.0.1:5000'
 
   constructor( private http: HttpClient){}
+
   saludo() : String{
     return 'Hola'
   }
-  mensajeBienvenida(): Observable<any> {
-    return this.http.get(`${this.apiUrl}/yeilis`);
+  consultarTareas(): Observable<any> {
+    return this.http.get(`${this.apiUrl}/verTareas`); // debe coincidir con el endpoint del back
   }
   
+  crearTarea(data: any): Observable<any>{
+    return this.http.post( (`${this.apiUrl}/crearTarea`), data)
+  }
 }

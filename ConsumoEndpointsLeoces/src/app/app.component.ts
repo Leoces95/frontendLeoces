@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {  Router, RouterOutlet } from '@angular/router';
 
 
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -18,9 +19,8 @@ export class AppComponent {
     // Se pueden definir otras variables, pero no es ideal en el constructor
     }
 
-  Saludo(){
-    console.log('Bienvenidos esta es una aplicación de Angular en los inicios');    
-    this.route.navigate(['inicial']);
+  Saludo(){        
+    this.route.navigate(['']);
   }
 
 }

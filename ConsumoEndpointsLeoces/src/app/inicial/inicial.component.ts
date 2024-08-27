@@ -7,9 +7,6 @@ import { ok } from 'assert';
 import { error } from 'console';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 
-
-
-
 @Component({
   selector: 'app-inicial',
   standalone: true,
@@ -21,10 +18,9 @@ export class InicialComponent {
 
 constructor(private router: Router, private consumoDeEndpointsService: ConsumoDeEndpointsService){}
 
-  clickLeo(): void{
-    console.log('el boton ha sido clikeado');    
-    this.router.navigate(['secundario']);
-    let test = this.consumoDeEndpointsService.saludo();
+  tareas(): void{        
+    this.router.navigate(['tareas']);
+    /*let test = this.consumoDeEndpointsService.saludo();
     alert(test)
     this.consumoDeEndpointsService.mensajeBienvenida().subscribe({
       next: (data) => {
@@ -36,6 +32,6 @@ constructor(private router: Router, private consumoDeEndpointsService: ConsumoDe
       complete: () => {
         console.log('Solicitud completada exitosamente.');
       }
-    });
+    });*/
   }  
 }

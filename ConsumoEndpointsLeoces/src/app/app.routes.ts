@@ -1,16 +1,17 @@
 import { Routes } from '@angular/router';
-import { InicialComponent } from './inicial/inicial.component';
-import { AppComponent } from './app.component';
-import { SecundarioComponent } from './secundario/secundario.component';
+
+import { TareasComponent } from './tareas/tareas.component';
+import { TareasGetComponent } from './tareas-get/tareas-get.component';
+import { TareasPutComponent } from './tareas-put/tareas-put.component';
+import { TareasPostComponent } from './tareas-post/tareas-post.component';
+import { TareasDeleteComponent } from './tareas-delete/tareas-delete.component';
 
 
 export const routes: Routes = [
-    {path: '', component: InicialComponent},
-    {path: 'inicial', component: InicialComponent,
-        children: [{path: 'secundario', component: SecundarioComponent},
-
-        ]
-    },
-    {path: 'secundario', component: SecundarioComponent},
-     
+    {path: '', component: TareasComponent},    
+    {path: 'tareas', component: TareasComponent},
+    {path: 'get', component: TareasGetComponent},
+    {path: 'put', component: TareasPutComponent},
+    {path: 'post', component: TareasPostComponent}   ,
+    {path: 'delete', component: TareasDeleteComponent}         
 ];
